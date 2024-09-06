@@ -18,10 +18,7 @@ function App() {
           ${rotated === false ? "" : "rotate"}
           `}
       >
-        <section
-          className={`circle  ${rotated === false ? "" : "rotate-more"}`}
-          onClick={handleClick}
-        >
+        <section className="circle" onClick={handleClick}>
           <div className="lines">
             <div className="line "></div>
             <div className="line"></div>

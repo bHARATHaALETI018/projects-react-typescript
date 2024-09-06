@@ -9,47 +9,48 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.rotate-more {
-  transform: rotate(-90deg);
-}
-.rotate {
-  transform: rotate(-20deg);
-  
-
-}
 .main-container {
   color: var(--white);
   background-color: var(--yellow);
   overflow: hidden;
 }
 .hide {
-  position: absolute;
+  position: fixed;
   left: -100%;
+  bottom: 18%;
   color: var(--black);
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
-  transition:   0.8s ease-in-out;
+  transition: 2s ease-in;
+}
+.first:hover,
+.second:hover,
+.third:hover {
+  background-color: var(--black);
+  color: var(--yellow);
+  border-radius: 6px;
 }
 .first {
-  left: 10%;
+  left: 3%;
   bottom: 18%;
-  transition:  0.8s ease-in-out;
-
+  transition: 0.75s ease-out;
+  margin-bottom: 18px;
+  padding: 0 3px;
 }
 .second {
-  left: 13%;
-  bottom: 15%;
-  transition:  1s ease-in-out;
-  
+  left: 5%;
+  bottom: 14%;
+  transition: 1s ease-out;
+  margin-bottom: 9px;
+  padding: 0 3px;
 }
 .third {
-  left: 19%;
-  bottom: 11.5%;
-  transition:  1.2s ease-in-out;
-  
+  left: 7%;
+  bottom: 10%;
+  transition: 1.2s ease-out;
+  padding: 0 3px;
 }
-
 
 .rotation-space {
   background-color: var(--black);
@@ -61,7 +62,7 @@
   transition: ease 1s;
 }
 .circle {
-  position: absolute;
+  position: fixed;
   width: 12rem;
   height: 12rem;
   background-color: var(--yellow);
@@ -148,4 +149,11 @@
 .right p:nth-of-type(2) {
   font-size: large;
   font-style: italic;
+}
+.rotate .circle {
+  transform: translate(-50%, -50%) rotate(-70deg);
+}
+
+.rotate {
+  transform: rotate(-20deg);
 }
