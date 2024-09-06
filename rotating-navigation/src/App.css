@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  --yellow: #fccd04;
+  --black: #0b0c10;
+  --white: #c5c6c7;
+
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.rotate-more {
+  transform: rotate(-90deg);
+}
+.rotate {
+  transform: rotate(-20deg);
+  
+
+}
+.main-container {
+  color: var(--white);
+  background-color: var(--yellow);
+  overflow: hidden;
+}
+.hide {
+  position: absolute;
+  left: -100%;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition:   0.8s ease-in-out;
+}
+.first {
+  left: 10%;
+  bottom: 18%;
+  transition:  0.8s ease-in-out;
+
+}
+.second {
+  left: 13%;
+  bottom: 15%;
+  transition:  1s ease-in-out;
+  
+}
+.third {
+  left: 19%;
+  bottom: 11.5%;
+  transition:  1.2s ease-in-out;
+  
+}
+
+
+.rotation-space {
+  background-color: var(--black);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  transform-origin: top left;
+  transition: ease 1s;
+}
+.circle {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: ease 1s;
+}
+
+.lines {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  bottom: 5%;
+  right: 20%;
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 3px;
+}
+.cross {
+  background-color: var(--yellow);
+  position: relative;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  top: 50%;
+  border-radius: 50%;
+  left: 5%;
+}
+.line-b.one {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+.line-b.two {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 3rem;
+}
+.right div h1 {
+  font-size: 3rem;
+  color: var(--yellow);
+}
+.right div p {
+  font-size: 0.75rem;
+  padding-left: 9px;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+.right p:nth-of-type(1) {
+  font-size: small;
+}
+.right p:nth-of-type(2) {
+  font-size: large;
+  font-style: italic;
+}
