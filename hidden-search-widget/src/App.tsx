@@ -5,14 +5,19 @@ function App() {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
+    console.log(clicked);
   };
   return (
     <section className="container">
       <div className={`search-bar ${clicked && "shrink"}`}>
-        <input type="text" name="search" id="search" className={`search-space ${clicked && "hide"}`} placeholder="search . . ."/>
-        <button className="search-icon"
-          onClick={handleClick}
-        >
+        <input
+          type="text"
+          name="search"
+          id="search"
+          className="search-space"
+          placeholder="search . . ."
+        />
+        <button className="search-icon" onClick={handleClick}>
           <img src={searchIcon} alt="search-icon" />
         </button>
       </div>
